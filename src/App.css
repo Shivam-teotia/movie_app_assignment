@@ -1,0 +1,38 @@
+.App{
+    width: 100%;
+    margin: 1em auto;
+}
+.grid{
+    display: grid;
+    margin-left: 1px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0.8rem;
+    justify-content: center;
+}
+.class1{
+    display: flex;
+    justify-content: space-between;
+}
+.class2{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.class3{
+    margin-right: 2rem;
+    margin-top: 1rem;
+}
+.class3 input{
+    border:1px solid lightgray;
+}
+@media only screen and (max-width:768px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }   
+}
+@media only screen and (max-width:575px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
